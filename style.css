@@ -1,0 +1,127 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(135deg, #1f4037, #99f2c8);
+    color: #fff;
+    padding-top: 50px;
+    transition: all 0.3s ease;
+}
+
+/* Liquid Glass Container */
+.container {
+    background: rgba(255, 255, 255, 0.1); /* transparent but non-frosted */
+    border-radius: 25px;
+    padding: 50px 40px;
+    max-width: 900px;
+    width: 90%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
+}
+
+/* Headings */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #e0f7fa;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #b2ebf2;
+    text-align: left;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+/* Lists */
+ul {
+    list-style: disc inside;
+    margin-bottom: 25px;
+    text-align: left;
+    color: #cfd8dc;
+}
+
+/* Buttons */
+.menu-button, .back-button {
+    display: inline-block;
+    padding: 15px 40px;
+    margin: 10px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Primary Buttons (Menu / Navigation) */
+.menu-button {
+    background: linear-gradient(135deg, #00bcd4, #4dd0e1);
+}
+
+.menu-button:hover {
+    background: linear-gradient(135deg, #4dd0e1, #00acc1);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+}
+
+/* Back Button */
+.back-button {
+    background: linear-gradient(135deg, #ef5350, #e53935);
+}
+
+.back-button:hover {
+    background: linear-gradient(135deg, #e53935, #b71c1c);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+}
+
+/* Links as Buttons */
+a.menu-button, a.back-button {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Responsive Typography */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    p, ul {
+        font-size: 1rem;
+    }
+    .menu-button, .back-button {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+}
